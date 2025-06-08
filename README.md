@@ -1,26 +1,31 @@
-# asset_classification_hou
-This repository provides an example of asset classification in Houdini using Logistic Regression. The aim is to demonstrate how machine learning models can be integrated into the 3D asset creation pipeline for automated classification tasks.
+# Asset Classification in Houdini Using Machine Learning
 
-Process:
+This project demonstrates how Machine Learning can be integrated into Houdini pipelines to automate 3D asset classification.  
+By training a Logistic Regression model on geometric features, we classify simple 3D assets (spheres vs. torus) to showcase the potential of ML-driven asset management in production.
 
-    Dataset Creation: I created a simple dataset consisting of 3D assets, 
-    specifically a torus and a sphere, as a quick example. 
-    These assets were selected to showcase how machine learning can differentiate between 
-    simple geometries based on specific features (e.g., shape, size, etc.).
+---
 
-    Model Training: I trained a Logistic Regression model from the scikit-learn library 
-    to classify the assets. The training data was labeled manually with the corresponding 
-    asset types (torus, sphere).
+## Process Overview
 
-    Feature Engineering: Basic features like object dimensions and geometric properties 
-    were used to train the model. In a real-world scenario, more complex features such as texture,
-    surface area, or topology could be integrated.
+### Dataset Creation
+Generated simple geometric assets (sphere and torus) inside Houdini.
 
-    Model Evaluation: The performance of the model was evaluated on a validation set. 
-    The accuracy of the classification model was measured, and potential areas of improvement were identified.
+### Feature Engineering
+Extracted basic geometric features as training data.
 
-Technologies Used:
+### Model Training
+Trained a Logistic Regression model using scikit-learn on the extracted features.
 
-    Houdini: For asset creation and 3D geometry manipulation.
-    Python & scikit-learn: For machine learning and logistic regression modeling.
+### Model Evaluation
+Evaluated performance on a validation set to measure classification accuracy.
+
+---
+## Houdini Python Code for Model Inference:
+![image](https://github.com/user-attachments/assets/62fe295e-82fa-4c43-be4c-99cca6447870)
+
+
+---
+
+- **Houdini** — for 3D asset generation and feature extraction.
+- **Python** + **scikit-learn** — for machine learning model development.
 
